@@ -10,8 +10,8 @@ class Program
 }
 public class Square : Shape
 {
-    public int Lenght { get; set; }
-    public Square(int lenght)
+    public double Lenght { get; set; }
+    public Square(double lenght)
     {
         Lenght = lenght;
     }
