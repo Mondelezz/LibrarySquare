@@ -4,12 +4,21 @@ class Program
 {
     public static void Main(string[] args)
     {
-        Triangle triangle = new Triangle(3, 5, 7);
-        Console.WriteLine(triangle.GetSquare());
+        Square square = new Square(5);
+        Console.WriteLine(square.GetSquare());     
+    }
+}
+public class Square : Shape
+{
+    public int Lenght { get; set; }
+    public Square(int lenght)
+    {
+        Lenght = lenght;
+    }
 
-        Console.WriteLine(new string('-',18));
-
-        Circle circle = new Circle(10);
-        Console.WriteLine(circle.GetSquare());
+    public override double GetSquare()
+    {
+        Area = Lenght * Lenght;
+        return Area;
     }
 }
